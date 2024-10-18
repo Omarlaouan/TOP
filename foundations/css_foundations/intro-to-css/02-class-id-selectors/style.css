@@ -1,20 +1,26 @@
+/* font family */
 .odd-numbers-elements
 .second-element
 .fourth-element {
     font-family: Verdana, DejaVu Sans, sans-serif;
 }
 
+/* odd numbers elements share a common background */
 .odd-numbers-elements {
     background-color: rgb(252, 168, 178);
 }
 
+.odd-numbers-elements.third-element {
+    font-size: 24px;
+}
+
+/* second element have unique properties (have ID in html) */
 .second-element {
     color: blue;
     font-size: 36px;
 }
-.odd-numbers-elements.third-element {
-    font-size: 24px;
-}
+
+/* fourth element have unique properties (have ID in html) */
 .fourth-element {
     background-color: lightgreen;
     font-size: 24px;
