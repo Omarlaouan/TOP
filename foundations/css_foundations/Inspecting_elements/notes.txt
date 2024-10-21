@@ -1,1 +1,2 @@
 - Google chrome devtool 
+- Reading "Get Started With Viewing And Changing The DOM"
