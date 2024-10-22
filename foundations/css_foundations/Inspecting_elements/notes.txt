@@ -1,2 +1,29 @@
-- Google chrome devtool 
-- Reading "Get Started With Viewing And Changing The DOM"
+# Google chrome devtool 
+
+### Overview
+
+##### Shortcuts
+Open devtools with shortcut : 
+Cmd + Opt + C : Work on CSS / DOM
+Cmd + Opt + J : Work on Javascript
+More shortcuts here : https://developer.chrome.com/docs/devtools/shortcuts
+
+##### What can you do with devtools
+- Device mode : simulate mobile device rendering and sensors
+- Element panel : view and change the DOM/CSS
+- Console panel : view messages and run JavaScript from the Console. (not clear)
+- Sources panel : run and debug javascript, persist changes. 
+- Network panel : view and debug network activity
+- Recorder panel : record, replay, and measure user flows
+- Performance panel :  Improve load and runtime performance
+- Memory panel : fix memory issues that affect page performance (eg memory leaks)
+- Application panel : Inspect all loaded ressources (Web SQL databases, local and session storage, cookies, Application Cache, images, fonts, and stylesheets.)
+- Security panel : Debug mixed content issues, certificate problems, and more.
+
+##### Viewing and Changing DOM
+DOM = Page elements strutured as a tree
+Node of a DOM = one specific element (like a word) of page
+Here is what you can do : 
+- Show rulers
+- Search for nodes
+- Edit the DOM
