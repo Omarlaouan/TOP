@@ -26,4 +26,5 @@ Node of a DOM = one specific element (like a word) of page
 Here is what you can do : 
 - Show rulers
 - Search for nodes
-- Edit the DOM
+- Edit nodes (text, style, type)
+- and much more : https://developer.chrome.com/docs/devtools/dom/
