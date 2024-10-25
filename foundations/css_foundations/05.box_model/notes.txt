@@ -7,7 +7,7 @@ Video : learn CSS box model in 8min
 }
 
 - Margin is shared between two elements that are next to each other. 
-The largest magin between two neighboors box will be the one selected. 
+- The largest margin between the two boxes is considered
 
 - By default, the height and width are not the real height and width (it doest account for padding, border, margin), 
 => Put box-sizing = border-box to make them count (it will adjust with content box)
@@ -15,6 +15,14 @@ The largest magin between two neighboors box will be the one selected.
 => You should always include this parameter. 
 ------
 
+Video : box-sizing: border-box
+
+'box-sizing' argument can take 2 values : 
+- content-box (default) : height and width are the size of the content box 
+- border-box : height and width is the total size of the box (including padding, border). 
+  The browser will adjust the size of the content box to make the total size(content-box + padding + border) = height/width
+  Note that the margin is not included because it is not really in the box.
+  It is called border-box because it is the size of everything inside the border box (content-box + padding + border)
 
 
 
