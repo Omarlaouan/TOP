@@ -24,5 +24,13 @@ Video : box-sizing: border-box
   Note that the margin is not included because it is not really in the box.
   It is called border-box because it is the size of everything inside the border box (content-box + padding + border)
 
+------
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model
+- Argument 'outer-display' can have 2 values :
+  - block : new-line, take a block of space, dont want anything nearby.
+  - inline : inline, live among other elements, tolerate promixity
 
+- Argument 'inner-display' : 
+  - flex?? -> the elements inside can be moved? 
+  -
 
