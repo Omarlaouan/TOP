@@ -26,11 +26,39 @@ Video : box-sizing: border-box
 
 ------
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model
+# Block and inline boxes:
+## Outter display type
 - Argument 'outer-display' can have 2 values :
   - block : new-line, take a block of space, dont want anything nearby.
+  example : <h1>, <p>, <ul> use 'block' as their default outer dislay type
   - inline : inline, live among other elements, tolerate promixity
+  example : <a>, <span>, <em>, <strong> use 'inline' as their default outer dislay type
 
-- Argument 'inner-display' : 
-  - flex?? -> the elements inside can be moved? 
-  -
+## Inner display type
+How elements are displayed inside the box
+- Argument 'display' : 
+  - flex : the element will use outer display = block and inner display = flex
+   Any direct children of the box will be flex items. (reead dflexbox specification)
+   (the children elements inside can be moved inside the box)
+  - The are other inner display type : grid, etc. 
+  - What is display = 'inline-flex'?
+
+## box-sizing 
+A good practice : To use the alternative box model for all of your elements 
+(which is a common choice among developers), set the box-sizing property on the 
+<html> element and set all other elements to inherit that value. 
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+
 
