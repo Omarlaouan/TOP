@@ -58,7 +58,40 @@ html {
   box-sizing: inherit;
 }
 
+# Playing with box models
+Adjusting width and height of "box alternate" to match "box"
+.box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+}
+
+.alternate {
+  box-sizing: border-box;
+  height: 230px; height(150) +  padding x 2 (40 x 2) + margin??
+  width: 400px; width (300px) + padding x 2 (40 x 2) + margin??
+
+}
+
+# Margin
+The margin is always added after the size of the visible box has been calculated.
+4 arguments : margin-top, margin-bottom, margin-right, margin-left
+Negative margin = the box collapse with it neighboor
+
+## Margin collapsing
+Margins collapse following these rules:
+Two positive margins will collapse into the largest (30 + 10 = 30)
+Two negative margins will collapse into the smallest (-15 + -5 = -15)
+For two margins with differents signs, they will be sumed (-25 + 20 = -5 or -25 + 35 = 10)
 
 
+# Borders 
+As margin, it has 4 shape args : top, buttom, right, left
+And 3 style args : width, style, color. 
+You can combine the two if desired : border-top-color : red, border-right-width : 12px, etc.  
 
-
+# Padding 
+4 shape args : top, buttom, right, left 
