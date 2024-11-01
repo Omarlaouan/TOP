@@ -97,3 +97,6 @@ You can combine the two if desired : border-top-color : red, border-right-width 
 space between border and content
 4 shape args : top, buttom, right, left 
 Can only be positive
+
+
+Practice exercises : https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks
