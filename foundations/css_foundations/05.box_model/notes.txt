@@ -71,9 +71,9 @@ Adjusting width and height of "box alternate" to match "box"
 
 .alternate {
   box-sizing: border-box;
-  height: 230px; height(150) +  padding x 2 (40 x 2) + margin??
-  width: 400px; width (300px) + padding x 2 (40 x 2) + margin??
-
+  height: 230px; height(150) +  padding x 2 (40 x 2) + border x 2 (5 x 2) 
+  width: 400px; width (300) + padding x 2 (40 x 2) + border x 2 (5 x 2)
+/* Note that there is no margin since it is already in the first box*/
 }
 
 ## Margin
@@ -94,6 +94,6 @@ And 3 style args : width, style, color.
 You can combine the two if desired : border-top-color : red, border-right-width : 12px, etc.  
 
 ## Padding 
+space between border and content
 4 shape args : top, buttom, right, left 
-
-# to continue
+Can only be positive
