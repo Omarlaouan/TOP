@@ -1,0 +1,113 @@
+# Video : learn CSS box model in 8min
+- Every element in a CSS is a box. 
+
+- You can make boxes appear on each element by adding in the css : 
+* {
+  outline: 2px solid red;
+}
+
+- Margin is shared between two elements that are next to each other. 
+- The largest margin between the two boxes is considered
+
+- By default, the height and width are not the real height and width (it doest account for padding, border, margin), 
+=> Put box-sizing = border-box to make them count (it will adjust with content box)
+=> This way, even if you change padding, margin, etc, the height and width will be the one you specified (total size of the element)
+=> You should always include this parameter. 
+------
+
+# Video : box-sizing: border-box
+
+'box-sizing' argument can take 2 values : 
+- content-box (default) : height and width are the size of the content box 
+- border-box : height and width is the total size of the box (including padding, border). 
+  The browser will adjust the size of the content box to make the total size(content-box + padding + border) = height/width
+  Note that the margin is not included because it is not really in the box.
+  It is called border-box because it is the size of everything inside the border box (content-box + padding + border)
+
+------
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model
+# Block and inline boxes:
+## Outter display type
+- Argument 'outer-display' can have 2 values :
+  - block : new-line, take a block of space, dont want anything nearby.
+  example : <h1>, <p>, <ul> use 'block' as their default outer dislay type
+  - inline : inline, live among other elements, tolerate promixity
+  example : <a>, <span>, <em>, <strong> use 'inline' as their default outer dislay type
+
+## Inner display type
+How elements are displayed inside the box
+- Argument 'display' : 
+  - flex : the element will use outer display = block and inner display = flex
+   Any direct children of the box will be flex items. (reead dflexbox specification)
+   (the children elements inside can be moved inside the box)
+  - The are other inner display type : grid, etc. 
+  - What is display = 'inline-flex'?
+
+## box-sizing 
+A good practice : To use the alternative box model for all of your elements 
+(which is a common choice among developers), set the box-sizing property on the 
+<html> element and set all other elements to inherit that value. 
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+## Playing with box models
+Adjusting width and height of "box alternate" to match "box"
+.box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+}
+
+.alternate {
+  box-sizing: border-box;
+  height: 230px; height(150) +  padding x 2 (40 x 2) + border x 2 (5 x 2) 
+  width: 400px; width (300) + padding x 2 (40 x 2) + border x 2 (5 x 2)
+/* Note that there is no margin since it is already in the first box*/
+}
+
+## Margin
+The margin is always added after the size of the visible box has been calculated.
+4 arguments : margin-top, margin-bottom, margin-right, margin-left
+Negative margin = the box collapse with it neighboor
+
+### Margin collapsing
+Margins collapse following these rules:
+Two positive margins will collapse into the largest (30 + 10 = 30)
+Two negative margins will collapse into the smallest (-15 + -5 = -15)
+For two margins with differents signs, they will be sumed (-25 + 20 = -5 or -25 + 35 = 10)
+
+### Margin Shorthand
+Instead of specifying margins individually for each side, CSS offers a shorthand syntax. Here’s how it works:
+
+  - Four Values: margin: top right bottom left;
+  - Three Values: margin: top right-and-left bottom;
+  - Two Values: margin: top-and-bottom right-and-left;
+  - One Value: margin: all-sides;
+
+
+## Borders 
+As margin, it has 4 shape args : top, buttom, right, left
+And 3 style args : width, style, color. 
+You can combine the two if desired : border-top-color : red, border-right-width : 12px, etc.  
+
+## Padding 
+space between border and content
+4 shape args : top, buttom, right, left 
+Can only be positive
+
+
+Practice exercises : 
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks
+https://css-tricks.com/almanac/properties/m/margin/
+# closed 
