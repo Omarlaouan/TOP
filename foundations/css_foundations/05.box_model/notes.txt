@@ -95,7 +95,6 @@ Instead of specifying margins individually for each side, CSS offers a shorthand
   - Two Values: margin: top-and-bottom right-and-left;
   - One Value: margin: all-sides;
 
-
 ## Borders 
 As margin, it has 4 shape args : top, buttom, right, left
 And 3 style args : width, style, color. 
