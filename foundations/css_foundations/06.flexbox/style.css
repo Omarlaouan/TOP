@@ -1,0 +1,18 @@
+.box-one {
+    background-color: lightcoral;
+    padding: 20px ;
+    border: 10px solid red;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.box-two {
+    background-color: lightblue;
+    padding: 10px;
+    border: 10px solid blue;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
