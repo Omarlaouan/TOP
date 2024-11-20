@@ -41,3 +41,6 @@ NB : if flex-grow and flex-shrink are specified, the width value is not respecte
 It depends on the size of parents : 
 - if parent bigger, they will grow to fill in,
 - if parent smaller, they will shrink to fill in. 
+
+
+Mdn lesson on flexbox : 
